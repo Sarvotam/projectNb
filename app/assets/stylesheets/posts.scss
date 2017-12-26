@@ -28,7 +28,10 @@ hr{
   margin: 0
 }
 
-
+  .page-scroll { font-family: sans-serif; text-transform: capitalize; letter-spacing: 1.85px !important; }
+    .page-scroll img{ height: 48px !important;     }
+    .page-scroll b{ color: #000000 !important; margin-left: 7px !important; }
+    .page-scroll span{ color: #777777; }
 .scrollTop {position: fixed; bottom: 8%; right: 6%; display: none; z-index:100;}
 
 
@@ -52,6 +55,7 @@ hr{
 
 body {
   background-color: white;
+  
 
   // color:white !important;
 }
@@ -82,7 +86,7 @@ body {
     overflow: hidden;
     top: 5px;
     
-    &:after {
+   /* &:after {
       content: '';
       position: absolute;
       background: $color-main;
@@ -95,7 +99,7 @@ body {
     }
     &:hover:after {
       width: 100%;
-    }
+    }*/
   }
 }
 
@@ -286,7 +290,7 @@ h1 {
 }
 /********slide home start*******/
 
-#toggle{margin:0% 5% 1% 0%;}
+#toggle{margin:0.80% 5% 1% 0%;}
  .carousel {
   position: relative;
   background-color: black;
@@ -456,6 +460,7 @@ h1 {
 }
 
 .carousel-caption {
+  font-family: sans-serif;
   right: 0% !important;
   bottom: 20px;
   left: 0% !important;
@@ -735,7 +740,7 @@ p.edge{
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 45px;
+  height: 55px;
   border-bottom: 1px solid gray;
   background: white;
   z-index: 80;
@@ -744,7 +749,7 @@ p.edge{
   font-size: 20px;
   height:45px;
   width:30% !important;
-  margin: 0.3% 0% 0% 6% !important;
+  margin: 0% 0% 0% 6% !important;
   position:static !important; 
   float: left !important;
   color: black !important;
@@ -755,16 +760,18 @@ p.edge{
   }
   
 }
-
-
-
-.logo a{
-  color: black;
+ a:link {
+    color: none !important;
 }
+
+
+/*.logo a{
+  color: black;
+}*/
 .contactmenu{
   float: right;
   margin-right: 12% !important;
-  padding-top: 16px;
+  padding-top: 20px;
 }
 .contactmenu ul li{
   float: left;
@@ -815,9 +822,9 @@ p.edge{
     transition: 0.3s;
 }
 
-.overlaay a:hover, .overlaay a:focus {
+/*.overlaay a:hover, .overlaay a:focus {
     color: red;
-}
+}*/
 
 .overlaay .closebtn {
     position: absolute;
